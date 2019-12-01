@@ -12,6 +12,8 @@ fs.readFile('input.txt', "utf8", (err, data) => {
     const validInputValues = data.split('\n').filter(isValidNumber);
     const moduleMasses = validInputValues.map(v => Number(v));
     const moduleFuels = moduleMasses.map(calculateModuleFuel);
-    console.log({ moduleMasses });
-    console.log({ moduleFuels });
+
+    const totalFuel = moduleFuels.reduce((acc, val) => acc + val, 0);
+
+    console.log(`Total fuel required is ${totalFuel}`);
 });
