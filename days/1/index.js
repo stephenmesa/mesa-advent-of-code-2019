@@ -1,19 +1,23 @@
-const fs = require('fs');
-const { calculateTotalModuleFuel } = require('./utils');
+const {
+    calculateModuleFuel,
+    calculateTotalModuleFuel,
+    parseInputMasses,
+} = require('./utils');
 
-const isValidNumber = d =>
-    d && d.length > 0 && !Number.isNaN(Number(d));
+parseInputMasses('input.txt')
+    .then((moduleMasses) => {
+        // Part 1
+        const moduleFuels = moduleMasses.map(calculateModuleFuel);
+        const totalFuel = moduleFuels.reduce((acc, val) => acc + val, 0);
+        console.log(`Part 1: Total fuel required is ${totalFuel}`);
 
-fs.readFile('input.txt', "utf8", (err, data) => {
-    if (err) {
+        // Part 2
+        const totalModuleFuels = moduleMasses.map(calculateTotalModuleFuel);
+        const totalTotalFuel = totalModuleFuels.reduce((acc, val) => acc + val, 0);
+        console.log(`Part 2: Total fuel required is ${totalTotalFuel}`);
+    })
+    .catch((err) => {
+        // Handle input errors
         console.error('Error reading input.txt file', err);
         process.exit(1);
-    }
-    const validInputValues = data.split('\n').filter(isValidNumber);
-    const moduleMasses = validInputValues.map(v => Number(v));
-    const moduleFuels = moduleMasses.map(calculateTotalModuleFuel);
-
-    const totalFuel = moduleFuels.reduce((acc, val) => acc + val, 0);
-
-    console.log(`Total fuel required is ${totalFuel}`);
-});
+    });
