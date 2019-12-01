@@ -1,7 +1,7 @@
 {
-  "name": "day-1",
+  "name": "day-2",
   "version": "1.0.0",
-  "description": "Day 1 of Advent of Code",
+  "description": "Day 2 of Advent of Code",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -20,6 +20,5 @@
   "homepage": "https://github.com/stephenmesa/mesa-advent-of-code-2019#readme",
   "devDependencies": {
     "jest": "^24.9.0"
-  },
-  "dependencies": {}
+  }
 }
