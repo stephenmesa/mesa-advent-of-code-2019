@@ -1,4 +1,4 @@
-# Advent of Code 2019
+# 🌟🎄🌟 Advent of Code 2019 🌟🎄🌟
 This is my personal collection of answers to the 2019 edition of Advent of Code.
 
 This may not be the best code, or fastest code, but it's mine!
