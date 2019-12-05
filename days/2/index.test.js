@@ -1,6 +1,6 @@
 const {
     processIntcodeProgram,
-} = require('./index');
+} = require('./utils');
 
 describe('processIntcodeProgram()', () => {
     const testHelper = (intCodes, expectedOutput) => {
