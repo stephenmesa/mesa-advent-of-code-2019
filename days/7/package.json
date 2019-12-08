@@ -1,0 +1,16 @@
+{
+  "name": "day-7",
+  "version": "1.0.0",
+  "description": "Day 7 of Advent of Code",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --runInBand",
+    "test-watch": "jest --watchAll --runInBand",
+    "start": "node index.js"
+  },
+  "author": "Stephen Mesa <stephen.mesa@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
