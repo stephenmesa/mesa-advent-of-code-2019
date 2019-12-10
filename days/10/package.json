@@ -1,0 +1,25 @@
+{
+  "name": "day-10",
+  "version": "1.0.0",
+  "description": "Day 10 of Advent of Code",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watchAll --runInBand",
+    "start": "node index.js",
+    "debug": "node --inspect-brk index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephenmesa/mesa-advent-of-code-2019.git"
+  },
+  "author": "Stephen Mesa <stephen.mesa@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephenmesa/mesa-advent-of-code-2019/issues"
+  },
+  "homepage": "https://github.com/stephenmesa/mesa-advent-of-code-2019#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
